@@ -15,6 +15,9 @@ export const TabTop = styled.div`
   width: 150px;
   left: 20px;
   top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   background-color: ${(props) => props.theme.colors.System.Red.hex};
   border-bottom: 1px solid ${(props) => props.theme.colors.System.Black.hex};
   border-right: 1px solid ${(props) => props.theme.colors.System.Black.hex};
@@ -31,6 +34,15 @@ export const TabTop = styled.div`
     right: -22.5px;
     transform: rotate(-45deg);
     top: -1.5px;
+  }
+  h1 {
+    font-family: ${(props) => props.theme.fonts.heading};
+    font-weight: ${(props) => props.theme.fontWeights.bold};
+    font-size: ${(props) => props.theme.fontSizes.xl};
+    line-height: ${(props) => props.theme.lineHeights.shorter};
+    position: absolute;
+    bottom: ${(props) => props.theme.space[3]};
+    left: ${(props) => props.theme.space[1]};
   }
 `
 export const TabBottom = styled.div`

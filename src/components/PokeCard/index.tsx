@@ -8,7 +8,9 @@ import { Container, TabTop, TabBottom } from './styles'
 export const PokeCard: React.FC = () => {
   return (
     <Container>
-      <TabTop />
+      <TabTop>
+        <h1>Charizard</h1>
+      </TabTop>
       <TabBottom>
         <span>#006</span>
       </TabBottom>
