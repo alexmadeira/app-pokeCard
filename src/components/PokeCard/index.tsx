@@ -1,14 +1,19 @@
 import React from 'react'
 
-import { Container, Tab, PokeBox, PokeImage } from './styles'
+import { PokBox } from '../PokeBox'
+import { PokeInfo } from '../PokeInfo'
+
+import { Container, TabTop, TabBottom } from './styles'
 
 export const PokeCard: React.FC = () => {
   return (
     <Container>
-      <Tab />
-      <PokeBox>
-        <PokeImage src="/temp/Pokemon.png" alt="" />
-      </PokeBox>
+      <TabTop />
+      <TabBottom>
+        <span>#006</span>
+      </TabBottom>
+      <PokBox />
+      <PokeInfo />
     </Container>
   )
 }
