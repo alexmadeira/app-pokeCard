@@ -1,3 +1,10 @@
+import { PokeCard } from './components/PokeCard'
+
+import { Container } from './styles/app'
 export function App() {
-  return <h1>poke card </h1>
+  return (
+    <Container>
+      <PokeCard />
+    </Container>
+  )
 }
