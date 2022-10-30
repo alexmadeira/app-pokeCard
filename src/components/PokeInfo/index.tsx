@@ -6,14 +6,13 @@ import PokeAnimation from '../PokeAnimation'
 import { Container, Info, ImagesBox, TypesBox } from './styles'
 
 export const PokeInfo: React.FC = () => {
-  const { getPokemon, isEmpty, getGeneration } = usePokemon()
+  const { getPokemon, isEmpty } = usePokemon()
   const pokemon = getPokemon()
-  const generation = getGeneration()
 
   return (
     <Container>
       <Info>
-        <p>Region: {!isEmpty && generation.main_region.name}</p>
+        <p>Region: kanto</p>
         <ImagesBox>
           <TypesBox>
             {!isEmpty() &&
