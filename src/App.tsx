@@ -1,11 +1,17 @@
 import { PokeCard } from './components/PokeCard'
+import { FindInput } from './components/FindInput'
 
-import { Container, FindInput } from './styles/app'
+import { PokeProvider } from './context/PokeContext'
+
+import { Container } from './styles/app'
+
 export function App() {
   return (
     <Container>
-      <FindInput type="text" placeholder="Find Pokemon" />
-      <PokeCard />
+      <PokeProvider>
+        <FindInput />
+        <PokeCard />
+      </PokeProvider>
     </Container>
   )
 }

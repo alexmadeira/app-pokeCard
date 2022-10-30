@@ -43,6 +43,7 @@ export const TabTop = styled.div`
     position: absolute;
     bottom: ${(props) => props.theme.space[3]};
     left: ${(props) => props.theme.space[1]};
+    text-transform: capitalize;
   }
 `
 export const TabBottom = styled.div`
