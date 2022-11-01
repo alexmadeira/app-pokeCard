@@ -4,7 +4,7 @@ export const Container = styled.div`
   display: flex;
   width: 100%;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   padding: ${(props) => props.theme.space[2]} ${(props) => props.theme.space[6]}
     ${(props) => props.theme.space[2]} ${(props) => props.theme.space[8]};
@@ -22,6 +22,7 @@ export const ImagesBox = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: ${(props) => props.theme.space[2]};
 `
 export const TypesBox = styled.div`
   display: flex;
