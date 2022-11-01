@@ -21,7 +21,10 @@ const PokeProvider: React.FC<IReactComponentProps> = ({ children }) => {
       const { data } = await api.get<IPokemon>(`pokemon/${pokemon}`)
 
       const pokemonStringId = String(data.id).padStart(3, '0')
-      const pokemonClearName = data.name.split('-')[0]
+      let pokemonClearName = data.name.split('-')[0]
+      pokemonClearName =
+        pokemonClearName[0].toUpperCase() + pokemonClearName.substring(1)
+
       const pokemonHDImageName = `${pokemonStringId}${pokemonClearName}.png`
 
       const newSprites = {
