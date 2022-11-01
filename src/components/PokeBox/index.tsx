@@ -28,7 +28,7 @@ export const PokBox: React.FC = () => {
   return (
     <Container type={types ? types[0].type.name : 'none'} baseColor={color}>
       {!isEmpty() && (
-        <PokeImage src={`/img/pokemons/${sprites?.hd_image_name}`} alt={name} />
+        <PokeImage src={`/img/pokemons/${sprites.hd_image_name}`} alt={name} />
       )}
     </Container>
   )

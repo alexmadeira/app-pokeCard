@@ -14,7 +14,8 @@ const PokeAnimation: React.FC = () => {
         <img
           src={
             sprites.versions['generation-v']['black-white'].animated
-              .front_default
+              .front_default ||
+            sprites.versions['generation-v']['black-white'].front_default
           }
           alt={`${name} - Animação`}
         />
