@@ -178,10 +178,7 @@ interface IOther {
   }
 }
 
-export interface ISprites
-  extends IBack,
-    IBackShiny,
-    IFront,
-    IFrontShiny,
-    IOther,
-    IVersion {}
+export interface ISprites extends IBack, IBackShiny, IFront, IFrontShiny {
+  other: IOther
+  versions: IVersion
+}

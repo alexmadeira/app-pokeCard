@@ -5,18 +5,20 @@ import { usePokemon } from '../../hooks/usePoke'
 import { Container } from './styles'
 
 const PokeAnimation: React.FC = () => {
-  const { getPokemon } = usePokemon()
+  const { getPokemon, isEmpty } = usePokemon()
   const { sprites, name } = getPokemon()
 
   return (
     <Container>
-      <img
-        src={
-          sprites?.versions!['generation-v']['black-white'].animated
-            .front_default
-        }
-        alt={`${name} - Animação`}
-      />
+      {!isEmpty() && (
+        <img
+          src={
+            sprites.versions['generation-v']['black-white'].animated
+              .front_default
+          }
+          alt={`${name} - Animação`}
+        />
+      )}
     </Container>
   )
 }
